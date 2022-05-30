@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30pt;
+}
+
+.calculator-container {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 375px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+.calc-top {
+  background: orange;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-title {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+.calc-display {
+  background: lightblue;
+  padding: 10px;
+  width: 100%;
+  height: 20%;
+}
+
+.display-top {
+  border: 1px solid white;
+  background: black;
+  height: 35%;
+}
+
+.display-top-value {
+  padding-right: 10px;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: auto;
+  border: 1px solid red;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+}
+
+.display-bottom {
+  border: 1px solid white;
+  background: black;
+  height: 65%;
+}
+
+.display-bottom-value {
+  padding-right: 10px;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: auto;
+  border: 1px solid red;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+}
+
+.calc-numpad {
+  font-weight: 300;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px;
+  grid-gap: 10px;
+  background: black;
+  width: 100%;
+  height: 70%;
+}
+
+.number {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: darkgrey;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: lightgrey;
+}
+
+.operand {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: orange;
+}
